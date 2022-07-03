@@ -48,3 +48,8 @@ Invalidate Caches도 삭제했다.
 결국 다시 Repository를 GitHub에 만들고 작성하던 파일들을 새로운 프로젝트에 복사했다.
 web.xml, servlet-context.xml, pom.xml도 복사했지만, 지금 새로운 프로젝트에서는 문제가 없다.
 결국 백업 내용을 복사해서 프로젝트를 계속 진행한다.
+
+### ch2-23 - 로그인 유효성검사, 쿠키
+- LoginController.java - 로그인 id, pwd 유효성 검사, 쿠키 적용
+- loginForm.jsp - id input태그와 checkbox에 쿠키 적용
+
