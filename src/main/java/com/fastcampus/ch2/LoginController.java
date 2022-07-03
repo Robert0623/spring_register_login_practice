@@ -27,7 +27,6 @@ public class LoginController {
         //2. id와 pwd가 일치하면, 홈으로 이동
         return "redirect:/";
     }
-
     private boolean loginCheck(String id, String pwd) {
         return "asdf".equals(id) && "1234".equals(pwd);
     }
