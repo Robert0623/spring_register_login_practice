@@ -53,3 +53,14 @@ web.xml, servlet-context.xml, pom.xml도 복사했지만, 지금 새로운 프�
 - LoginController.java - 로그인 id, pwd 유효성 검사, 쿠키 적용
 - loginForm.jsp - id input태그와 checkbox에 쿠키 적용
 
+## 07.04
+### ch2-24, ch2-25 - 세션-1,2
+- index.jsp, boardList.jsp - EL, sessionScope로 네비바 변경
+- BoardController - 로그인 되어있으면 boardList.jsp로, 아니면 loginForm으로 이동. 
+- LoginController - logout()추가. 로그인 상태를 유지하도록.
+### ch2-26 - 세션-3
+- PerformanceFilter - getHeader("referer"), getMethod(), getRequestURI()
+- BoardController - toURL로 'board/list'정보를 전송. 
+- loginForm.jsp - toURL을 받고, POST로 전송
+- LoginController - toURL을 받아서 작업
+- index.jsp, loginForm.jsp - page의 session을 false로 하고, sesseionScope를 쓰는 것은 수정.
