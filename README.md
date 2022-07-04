@@ -79,7 +79,7 @@ web.xml, servlet-context.xml, pom.xml도 복사했지만, 지금 새로운 프�
 
 ### ch2-30 - WebDataBinder - 타입 변환
 - User, RegisterController 
-- @IniBinder - PropertyEditor, @DateTimeFormat - Formatter 
+- @InitBinder - PropertyEditor, @DateTimeFormat - Formatter 
 
 ### ch2-31 - WebDataBinder - 데이터 검증
 - pom.xml - add dependency - validation-api
