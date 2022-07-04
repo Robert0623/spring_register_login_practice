@@ -76,3 +76,8 @@ web.xml, servlet-context.xml, pom.xml도 복사했지만, 지금 새로운 프�
 - web.xml - <error-page> - 에러 코드로
 - servlet-context.xml - SimpleMappingExceptionResolver - 에러 종류로
 - ExceptionController, ExceptionController2 - @ResponseStatus
+
+## ch2-29 - WebDataBinder - 타입 변환
+- User, RegisterController 
+- @IniBinder - PropertyEditor, @DateTimeFormat - Formatter 
+
