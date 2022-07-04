@@ -1,9 +1,11 @@
 package com.fastcampus.ch2;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseStatus;
 
 import java.io.FileNotFoundException;
 
@@ -15,11 +17,11 @@ public class ExceptionController {
         return "error";
     }
     @ExceptionHandler(Exception.class)
+    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR) //200 --> 500
     public String catcher(Exception ex, Model m) {
         System.out.println("catcher() in ExceptionController");
-        m.addAttribute("msg", "message from ExceptionController.catcher()");
         System.out.println("m"+m);
-        m.addAttribute("ex", ex);
+//        m.addAttribute("ex", ex);
         return "error";
     }
     @RequestMapping("/ex")

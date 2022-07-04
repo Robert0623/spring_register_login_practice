@@ -55,7 +55,7 @@ web.xml, servlet-context.xml, pom.xml도 복사했지만, 지금 새로운 프�
 
 ## 07.04
 ### ch2-24, ch2-25 - 세션-1,2
-- index.jsp, boardList.jsp - EL, sessionScope로 네비바 변경
+- index.jsp, boardList.jsp - EL, sessionScope로 네비bar 변경
 - BoardController - 로그인 되어있으면 boardList.jsp로, 아니면 loginForm으로 이동. 
 - LoginController - logout()추가. 로그인 상태를 유지하도록.
 
@@ -70,3 +70,9 @@ web.xml, servlet-context.xml, pom.xml도 복사했지만, 지금 새로운 프�
 - error.jsp
 - ExceptionController - @ExceptionHandler
 - ExceptionController2, GlobalCatcher - @ControllerAdvice
+
+### ch2-28 - 예외처리-2
+- error.jsp - Model로 받기, isErrorPage="true", pageContext.exception
+- web.xml - <error-page> - 에러 코드로
+- servlet-context.xml - SimpleMappingExceptionResolver - 에러 종류로
+- ExceptionController, ExceptionController2 - @ResponseStatus
