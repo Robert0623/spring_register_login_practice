@@ -77,11 +77,11 @@ web.xml, servlet-context.xml, pom.xml도 복사했지만, 지금 새로운 프�
 - servlet-context.xml - SimpleMappingExceptionResolver - 에러 종류로
 - ExceptionController, ExceptionController2 - @ResponseStatus
 
-### ch2-29 - WebDataBinder - 타입 변환
+### ch2-30 - WebDataBinder - 타입 변환
 - User, RegisterController 
 - @IniBinder - PropertyEditor, @DateTimeFormat - Formatter 
 
-### ch2-30 - WebDataBinder - 데이터 검증
+### ch2-31 - WebDataBinder - 데이터 검증
 - pom.xml - add dependency - validation-api
 - GlobalValidator - Global로 로그인 User 데이터 검증객체
 - RegisterController - 수동, 자동 검증, UserValidator, GlobalValidator 적용
