@@ -77,15 +77,17 @@ web.xml, servlet-context.xml, pom.xml도 복사했지만, 지금 새로운 프�
 - servlet-context.xml - SimpleMappingExceptionResolver - 에러 종류로
 - ExceptionController, ExceptionController2 - @ResponseStatus
 
+### ch2-29 Spring MVC에서 DispatcherServlet의 흐름
+
 ### ch2-30 - WebDataBinder - 타입 변환
 - User, RegisterController 
 - @InitBinder - PropertyEditor, @DateTimeFormat - Formatter 
 
 ### ch2-31 - WebDataBinder - 데이터 검증
 - pom.xml - add dependency - validation-api
-- GlobalValidator - Global로 로그인 User 데이터 검증객체
+- GlobalValidator - 전역 Validator, 회원가입 시 User 객체 검증
 - RegisterController - 수동, 자동 검증, UserValidator, GlobalValidator 적용
-- UserValidator - Local로 로그인 User 데이터 검증 객체
+- UserValidator - Local로 회원가입 시 User 객체 검증
 - error_message.properties - 에러 메세지 파일
-- servlet-context.xml - globalValidation, messageSource 추가
-- registerForm.jsp - <form:form> 추가
+- servlet-context.xml - globalValidator, messageSource 빈 등록
+- registerForm.jsp - 에러메세지 출력 - ```<form:form>``` 추가

@@ -102,6 +102,8 @@
       setMessage('id의 길이는 3이상이어야 합니다.', frm.id);
       return false;
     }
+    //Validation 실습을 위해 주석처리 함.
+    //검증은 자바스크립트, Validation 둘 다 해야 함!
     // if(frm.pwd.value.length<3) {
     //   setMessage('pwd의 길이는 3이상이어야 합니다.', frm.pwd);
     //   return false;
